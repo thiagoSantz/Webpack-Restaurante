@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  color: rgb(196, 196, 197);
+  font-size: medium;
+}
+/*----------------------------------------------------------------------*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: scroll;
+  /*---------*/
+  background: url("imagens/nik-owens.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.credito {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-style: italic;
+  font-size: small;
+  color: rgba(195, 195, 195, 0.262);
+  z-index: 0;
+}
+
+.credito a {
+  color: rgba(195, 195, 195, 0.262);
+  text-decoration: none;
+}
+
+.credito a:hover {
+  color: rgba(195, 195, 195, 0.119);
+}
+
+/*----------------------------------------------------------------------*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  box-sizing: border-box;
+  z-index: 2;
+  /**/
+  background-color: rgba(0, 0, 0, 0.952);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(196, 196, 197, 0.3);
+}
+
+/**/
+
+.titulo1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: italic;
+  font-size: 4em;
+  font-weight: 900;
+  color: #ff3737;
+  transform: skewX(-15deg);
+  text-shadow: 2px 2px 8px rgba(80, 80, 80, 0.8);
+}
+.titulo2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 900;
+  color: #ffffff;
+  transform: skewX(-15deg);
+  text-shadow: 2px 2px 8pxrgba (96, 96, 96, 0.8);
+}
+
+/**/
+
+nav a,
+.enviar {
+  text-decoration: none;
+  background-color: #e63030;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+nav a:hover {
+  background-color: #cc0000;
+}
+
+.enviar:hover {
+  background-color: #cc0000;
+}
+
+/*----------------------------------------------------------------------*/
+
+main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: center;
+}
+
+/*----------------------------------------------------------------------*/
+
+.caixa-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.caixa-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caixa-conteudo,
+.caixa-menu {
+  /**/
+  width: 55vw;
+  margin-top: 15vh;
+  background-color: rgba(0, 0, 0, 0.782);
+  border-left: 1px solid rgba(196, 196, 197, 0.3);
+  border-right: 1px solid rgba(196, 196, 197, 0.3);
+}
+
+.imagem-exemplo {
+  width: auto;
+  height: 40vh;
+  margin-block: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+}
+
+/*----------------------------------------------------------------------*/
+
+.card-prato {
+  position: relative;
+}
+
+.texto-imagem {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  font-size: small;
+  font-style: italic;
+  color: #a1a1a1c5;
+}
+
+.texto-imagem a {
+  font-size: small;
+  text-decoration: none;
+  color: #a1a1a1c5;
+}
+
+.texto-imagem a:hover {
+  color: #a1a1a17b;
+}
+
+.prato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 7rem;
+  min-height: 40vh;
+}
+
+.img-menu {
+  width: auto;
+  height: 20vh;
+  margin-block: 7px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+}
+
+/*----------------------------------------------------------------------*/
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.contato input, .contato textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  color: #2d2d2d;
+  background-color: #ffffffb1;
+}
+
+.contato input::placeholder, .contato textarea::placeholder {
+ color: #828282b2;
+}
+
+.datahora {
+  display: flex;
+  gap: 10px;
+}
+
+.datahora input {
+  flex: 1;
+  color: #828282b2;
+}
+
+/*----------------------------------------------------------------------*/
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+  min-height: 20vh;
+  background-color: rgba(0, 0, 0, 0.782);
+  border-top: 1px solid rgba(196, 196, 197, 0.3);
+}
+
+.caixa-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  box-sizing: border-box;
+  gap: 1px;
+  padding-top: 4vh;
+}
+
+.caixa-texto a {
+  text-decoration: none;
+}
+
+.caixa-texto a:hover {
+  color: #ffffff78;
+}
+
+.titulo3 {
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+}
