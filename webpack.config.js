@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+//npx webpack serve
+
 module.exports = {
   mode: "development",
   entry: "./src/index.js",

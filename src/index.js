@@ -2,6 +2,7 @@ import loadHome from "./home.js";
 import loadMenu from "./menu.js";
 import loadContatos from "./contatos.js";
 import "./style.css";
+import "./styleMobile.css"
 
 const buttonMenu = document.getElementById("menu-btn");
 const buttonHome = document.getElementById("home-btn");
