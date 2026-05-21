@@ -1,8 +1,8 @@
 # 🍕 Massa Boa Pizza — Restaurant Page
 
-![Preview](./src/imagens/preview1.png)
-![Preview](./src/imagens/preview2.png)
-![Preview](./src/imagens/preview3.png)
+![Preview](./src/imagens/Preview1.png)
+![Preview](./src/imagens/Preview2.png)
+![Preview](./src/imagens/Preview3.png)
 
 ## 📋 Sobre o Projeto
 
